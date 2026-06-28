@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://sumitx5.github.io
