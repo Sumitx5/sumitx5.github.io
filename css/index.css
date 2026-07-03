@@ -1,6 +1,6 @@
 
 :root {
-    --primary: #ff3131; /* Vibrant Red */
+    --primary: #ff3131;
     --bg-dark: #080808;
     --card-bg: rgba(255, 255, 255, 0.03);
     --border-color: rgba(255, 255, 255, 0.1);
@@ -24,7 +24,7 @@ body {
     line-height: 1.6;
 }
 
-/* Ambient Background Glow */
+/*Background */
 body::before {
     content: "";
     position: fixed;
@@ -38,7 +38,7 @@ body::before {
     pointer-events: none;
 }
 
-/* --- NAVIGATION --- */
+/*Navigation */
 nav {
     position: fixed;
     top: 0;
@@ -80,7 +80,7 @@ nav {
     color: var(--primary);
 }
 
-/* --- HERO SECTION --- */
+/*Main*/
 .hero {
     height: 100vh;
     display: flex;
@@ -126,8 +126,9 @@ nav {
     box-shadow: 0 15px 30px rgba(255, 49, 49, 0.4);
 }
 
-/* --- PROJECTS SECTION --- */
+/*Apps Section*/
 .section-header {
+    margin-top: 2%;
     padding: 4rem 10% 2rem;
     font-size: 1.8rem;
     display: flex;
@@ -190,7 +191,150 @@ nav {
     color: var(--text-dim);
 }
 
-/* --- FOOTER --- */
+/* About Me*/
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10% 4rem;
+}
+
+.profile-layout {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    max-width: 900px;
+    margin-bottom: 3rem;
+}
+
+.profile-img {
+    width: 220px;
+    height: auto;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    object-fit: cover;
+}
+
+.profile-text-content {
+    text-align: left;
+}
+
+.profile-text-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.profile-text-content p {
+    font-size: 1.05rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+.section-text {
+    width: 100%;
+    max-width: 900px;
+    text-align: left;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.section-text h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.section-text p {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.8;
+}
+
+.section-text p a{
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-dim);
+    border-radius: 10px;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    background: rgba(255, 49, 49, 0.05);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 49, 49, 0.2);
+}
+
+.social-links svg {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .section-header {
+        font-size: 1.5rem;
+        gap: 0.5rem;
+    }
+
+    .profile-layout {
+        flex-direction: row; 
+        align-items: flex-start;
+        gap: 1.2rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .profile-img {
+        margin-top: 3%;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        object-fit: cover;
+    }
+
+    .profile-text-content h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.4rem;
+        line-height: 1.3;
+    }
+
+    .profile-text-content p {
+        font-size: 0.9rem;
+    }
+    
+    .section-text {
+        padding: 1.5rem;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+        gap: 1rem;
+        margin-top: 1.2rem;
+    }
+}
+
+/*Footer */
 footer {
     padding: 5rem 10%;
     border-top: 1px solid var(--border-color);
@@ -207,7 +351,7 @@ footer {
 .footer-links a {
     color: var(--text-dim);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     transition: 0.3s;
 }
 
@@ -220,18 +364,16 @@ footer {
     font-size: 0.8rem;
 }
 
-/* Removes default link styling from cards */
 .card-link {
     text-decoration: none;
     color: inherit;
-    display: block; /* Makes the whole area clickable */
+    display: block;
 }
 
 .card-link:focus {
-    outline: none; /* Removes the ugly box on click */
+    outline: none;
 }
 
-/* Optional: Add a subtle indicator that it's clickable */
 .card:hover {
     cursor: pointer;
     border-color: var(--primary);
@@ -270,5 +412,9 @@ footer {
     .nav-links { display: none; }
     .hero h1 { font-size: 3rem; }
     .grid-container { grid-template-columns: 1fr; }
-    .icon { height: 40px; width: 40px; margin-left: 50%;}
+    .icon { height: 40px; width: 40px; margin-left: 52%;}
+}
+
+.hidden {
+    display: none !important;
 }

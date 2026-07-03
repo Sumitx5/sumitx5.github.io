@@ -11,41 +11,32 @@
 <body>
 
     <nav>
-        <div class="logo">Tokito</div>
+        <div class="logo" onclick="active_home()">Tokito</div>
         <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#apps">Apps</a>
-            <a href="#help">Help</a>
+            <a href="#home" onclick="active_home()">Home</a>
+            <a href="#apps" onclick="active_apps()">Apps</a>
+            <a href="#aboutme" onclick="active_aboutme()">About Me</a>
+            <a href="#help" onclick="active_help()">Help</a>
         </div>
     </nav>
 
     <section id="home" class="hero">
         <h1>Tokito's <span>World</span></h1>
-        <p>I specialize in building Discord bots, interactive 3D games, and open-source applications for the modern web.</p>
-        <a href="#apps" class="cta-btn">View Projects</a>
+        <p>I specialize in building Android Apps, 3d Games with Godot, Discord Bots and web apps </p>
+        <a href="#apps" onclick="active_apps()" class="cta-btn">View Projects</a><br><a href="#aboutme" onclick="active_aboutme()" class="cta-btn">About Me</a>
     </section>
 
     <h2 class="section-header" id="apps">Applications</h2>
-    <div class="grid-container">
+    <div class="grid-container" id="apps_content">
 
         <a href="https://github.com/Sumitx5/Muzix_X" target="_blank" class="card-link">
             <div class="card">
                 <h3>Muzix X</h3>
-                <p>Free Music Streaming app with online and offline support of music. Click to Download </p>
+                <p>Free Music Streaming app with online and offline support of music. <br> <b>Click to Download</b></p>
                 <div class="badge-group">
                     <span class="badge">Kotlin</span>
                     <span class="badge">Android Studio</span>
-                </div>
-            </div>
-        </a>
-        
-        <a href="https://github.com/Sumitx5/Ryzox" target="_blank" class="card-link">
-            <div class="card">
-                <h3>Ryzox</h3>
-                <p>A feature-rich Discord bot designed for server moderation and community entertainment.</p>
-                <div class="badge-group">
-                    <span class="badge">Discord.py</span>
-                    <span class="badge">JSON</span>
+                    <span class="badge">Android</span>
                 </div>
             </div>
         </a>
@@ -53,23 +44,23 @@
         <a href="https://github.com/Sumitx5/Rolling-Cars-3D" target="_blank" class="card-link">
             <div class="card">
                 <h3>Car Driving 3D</h3>
-                <p>A fast-paced 3D driving simulation built with custom physics and rendering optimization.</p>
+                <p>Simple 3D Game Made in Godot With Average Graphics. <br> Click to <b>Check Out OR Download</b> Whole Project</p>
                 <div class="badge-group">
-                    <span class="badge">Game Engine</span>
                     <span class="badge">3D Physics</span>
                     <span class="badge">Godot</span>
-                    <span class="badge">Free</span>
+                    <span class="badge">Android</span>
                 </div>
             </div>
         </a>
 
         <a href="https://sumitx5.github.io/AniTox/" target="_blank" class="card-link">
             <div class="card">
-                <h3>AniTox Web App</h3>
-                <p>A dedicated anime streaming application featuring a dark/red interface and trailer integration.</p>
+                <h3>AniTox</h3>
+                <p>Anime streaming application featuring a dark/red interface and trailer integration. <br> <b>Click to Open</b></p>
                 <div class="badge-group">
                     <span class="badge">Web App</span>
                     <span class="badge">API</span>
+                    <span class="badge">Html/Js/Css</span>
                 </div>
             </div>
         </a>
@@ -77,10 +68,22 @@
         <a href="https://github.com/Sumitx5/SDSkyblockCore" target="_blank" class="card-link">
             <div class="card">
                 <h3>SD Skyblock Core</h3>
-                <p>This is a Plugin based on hypixel skyblock in this plugin u can make server like hypixel skyblock.</p>
+                <p>Plugin based on hypixel skyblock in this plugin u can make server like hypixel skyblock. <br> <b>Click to Download</b></p>
                 <div class="badge-group">
-                    <span class="badge">JAVA</span>
+                    <span class="badge">Java</span>
                     <span class="badge">Minecraft</span>
+                    <span class="badge">Skyblock</span>
+                </div>
+            </div>
+        </a>
+
+        <a href="https://github.com/Sumitx5/Ryzox" target="_blank" class="card-link">
+            <div class="card">
+                <h3>Ryzox</h3>
+                <p>Feature-rich Discord bot designed for server moderation and community entertainment. <br><b>Click to See Source Code</b></p>
+                <div class="badge-group">
+                    <span class="badge">Discord.py</span>
+                    <span class="badge">Bot</span>
                 </div>
             </div>
         </a>
@@ -88,10 +91,11 @@
         <a href="https://github.com/Sumitx5/Leaf" target="_blank" class="card-link">
             <div class="card">
                 <h3>LEAF</h3>
-                <p>A BDFD & Python Bot Its Prefix is !help.</p>
+                <p>A BDFD & Python Bot Its Prefix is !help. <br><b>Currently Down (You can still Check the Codes Here)</b></p>
                 <div class="badge-group">
                     <span class="badge">BDFD/BDjs</span>
                     <span class="badge">Discord.py</span>
+                    <span class="badge">Bot</span>
                 </div>
             </div>
         </a>
@@ -99,7 +103,7 @@
         <a href="https://github.com/Sumitx5/Muzic-Bot" target="_blank" class="card-link">
             <div class="card">
                 <h3>Muzic Bot</h3>
-                <p>A Music Bot for Discird Made In Python</p>
+                <p>Music Bot for Discord Made In Python. <br> <b>Open Source Code Click to Open</b></p>
                 <div class="badge-group">
                     <span class="badge">FFMPEG</span>
                     <span class="badge">Discord.py</span>
@@ -110,6 +114,73 @@
 
     </div>
 
+    <h2 class="section-header" id="aboutme">About Me</h2>
+    <div class="aboutme" id="aboutme_content">
+        <div class="profile-layout">
+            <img src="css/images/profile.png" alt="Sumit" class="profile-img">
+            <div class="profile-text-content">
+                <div class="section-text">
+                <h3>Sumit Singh</h3>
+                <p>
+                    Hello! I am Sumit Singh, <br>
+                    you can check My Profile Or Social Links Below.
+                </p>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/Sumitx5" target="_blank" title="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/Sumitx5" target="_blank" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://instagram.com/Sumit_x1.1" target="_blank" title="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="mailto:sumitsingh282698@gmail.com" title="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="section-text">
+            <h3>Hi there, I'm Sumit! 👋</h3>
+            <p>
+                I'm a passionate Computer Science & Engineering student and an independent developer 
+                focused on creating games, automated tools, and responsive mobile applications. 
+                I love diving into complex codebases, tinkering with game physics, and building automation systems.
+            </p>
+<hr>
+            <h3 style="margin-top: 2%;">My Tech Stack & Tools</h3>
+            <p>
+                <b>Languages:</b> Python, Kotlin, GDScript, Java, JavaScript, MySQL <br>
+                <b>Game Development:</b> Godot Engine (3D & Physics mechanics) <br>
+                <b>Mobile App Development:</b> Android Studio <br>
+                <b>Automation & Bots:</b> discord.py, Mineflayer (Node.js) <br>
+                <b>Data Formats:</b> JSON, YAML
+            </p>
+<hr>
+            <h3 style="margin-top: 2%;">Featured Projects</h3>
+            <p>
+                <a href="https://github.com/Sumitx5/Muzix_X"><b>Muzix X:</b></a> Music Streaming App with Material 3 Expressive Ui <br>
+                <a href="https://github.com/Sumitx5/Rolling-Cars-3D"><b>Car Driving Simulator 3D:</b></a> Simple 3d Car Game <br>
+                <a href="https://github.com/Sumitx5/Ryzox"><b>Ryzox:</b></a> fully featured Discord Bot <br>
+                <a href="https://github.com/Sumitx5/SDSkyblockCore"><b>SDSkyblockCore</b></a> Minecraft Plugin <br>
+                <a href="https://github.com/Sumitx5/Muzic-Bot"><b>Muzic-Bot</b></a> Music Streamin Discord Bot <br>
+                <br>
+                See More Projects on <a href="https://github.com/Sumitx5"><b>My Git Profile</b></a> or <a href="#apps" onclick="active_apps()"><b>My Apps</b></a> Page
+                if you want to go <a href="#home" onclick="active_home()">Home</a> Click Me
+            </p>
+        </div>
+            
+    </div>
+
+    <div class="help_page" id="help_page">
+        <h2 class="section-header">Help </h2>
+    </div>
+
     <footer id="help">
         <div class="footer-links">
             <a href="mailto: sumitsingh282698@gmail.com">Email Support</a>
@@ -118,5 +189,6 @@
         </div>
         <p class="copyright">© 2026 TOKITO'S WORLD. ALL RIGHTS RESERVED.</p>
     </footer>
+    <script src="js/content_handeler.js"></script>
 </body>
 </html>
