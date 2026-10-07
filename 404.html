@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Error</title>
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="assets/css/design.css">
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .error-card {
+            max-width: 440px;
+            text-align: center;
+            align-items: center;
+            padding: 40px 32px;
+        }
+
+        .error-code {
+            font-size: clamp(4.5rem, 12vw, 6.5rem);
+            font-weight: 900;
+            line-height: 1;
+            margin: 0 0 10px 0;
+            background: linear-gradient(135deg, #ffffff 30%, var(--primary) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px var(--primary-glow);
+        }
+
+        .error-card .glass-icon-circle {
+            margin-bottom: 24px;
+        }
+
+        .error-card .glass-desc {
+            margin-bottom: 24px;
+        }
+
+        .error-card .glass-actions {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <p></p>
+    <div class="glass-card error-card">
+        <div class="glass-icon-circle">
+            <svg class="fallback-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+            </svg>
+        </div>
+
+        <h1 class="error-code">404</h1>
+
+        <div class="title-row" style="justify-content: center; margin-bottom: 12px;">
+            <h2 class="glass-heading" style="font-size: 1.5rem;">Lost in the Code?</h2>
+        </div>
+
+        <p class="glass-desc">
+            The page or resource you are looking for has been moved, renamed, or doesn't exist.
+        </p>
+
+        <hr class="glass-divider" style="width: 100%;">
+
+        <div class="glass-actions">
+            <a href="/" class="glass-btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Back to Home</span>
+            </a>
+
+            <a href="/#apps" class="glass-btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span>Browse Apps</span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
