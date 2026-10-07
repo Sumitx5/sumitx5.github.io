@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Muzix X",
+    "version": "v1.3.9",
+    "icon": "https://raw.githubusercontent.com/sumit282698/Muzix_X/master/app/src/main/ic_launcher-playstore.png",
+    "description": "Free Music Streaming app with online and offline support of music. Built with Material 3 Expressive",
+    "badges": ["Kotlin", "Android Studio", "Android"],
+    "detailsUrl": "https://github.com/Sumitx5/Muzix_X",
+    "downloadUrl": "https://github.com/Sumitx5/Muzix_X/releases"
+  },
+  {
+    "title": "Car Driving Simulator 3D",
+    "version": "v1.3",
+    "icon": "",
+    "description": "An exciting 3D Android car game built completely from scratch using the open-source Godot Engine.",
+    "badges": ["Godot Engine", "Android"],
+    "detailsUrl": "https://github.com/Sumitx5/Rolling-Cars-3D",
+    "downloadUrl": "https://drive.google.com/file/d/13qlczAlv4fYfjr4I1kXBap3PhWGy2hwr/view"
+  },
+  {
+    "title": "AniTox",
+    "version": "v1.0",
+    "icon": "",
+    "description": "Free Anime Streaming Application. Undermaintainence",
+    "badges": ["HTML", "Web App", "API"],
+    "detailsUrl": "https://github.com/Sumitx5/AniTox",
+    "downloadUrl": "https://Sumitx5.github.io/AniTox/"
+  },
+  {
+    "title": "SDSkyblockCore",
+    "version": "v0.0.1 beta",
+    "icon": "",
+    "description": "A powerful Minecraft server plugin inspired by Hypixel Skyblock.",
+    "badges": ["Minecraft", "Java"],
+    "detailsUrl": "https://github.com/Sumitx5/SDSkyblockCore",
+    "downloadUrl": "https://github.com/Sumitx5/SDSkyblockCore/releases"
+  },
+  {
+    "title": "Muzic-Bot",
+    "version": "v1.0.2",
+    "icon": "",
+    "description": "A simple, lightweight Discord music bot built using discord.py",
+    "badges": ["Python", "Discord Bot"],
+    "detailsUrl": "https://github.com/Sumitx5/Muzic-Bot",
+    "downloadUrl": "https://github.com/Sumitx5/Muzic-Bot/archive/refs/heads/main.zip"
+  },
+  {
+    "title": "Leaf",
+    "version": "v1.2",
+    "icon": "",
+    "description": "A multi-framework Discord bot designed using both Bot Designer for Discord (BDFD / BDJS) and Python.",
+    "badges": ["Python", "BDFD", "Discord Bot"],
+    "detailsUrl": "https://github.com/Sumitx5/Leaf",
+    "downloadUrl": "https://github.com/Sumitx5/Leaf.git"
+  }
+]
