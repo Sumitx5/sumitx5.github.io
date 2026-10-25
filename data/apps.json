@@ -18,10 +18,19 @@
     "downloadUrl": "https://drive.google.com/file/d/13qlczAlv4fYfjr4I1kXBap3PhWGy2hwr/view"
   },
   {
-    "title": "AniTox",
-    "version": "Under Maintenance",
+    "title": "Lepo",
+    "version": "v2.0",
     "icon": "",
-    "description": "Free Anime Streaming Application. Undermaintainence Working on V2",
+    "description": "A multi-framework Discord bot designed using both Bot Designer for Discord (BDFD / BDJS) and Python.",
+    "badges": ["Python", "BDFD", "Discord Bot"],
+    "detailsUrl": "https://github.com/Sumitx5/Leaf",
+    "downloadUrl": "https://github.com/Sumitx5/Leaf.git"
+  },
+  {
+    "title": "AniTox",
+    "version": "v2.1",
+    "icon": "",
+    "description": "Free Anime Streaming Application.",
     "badges": ["HTML", "Web App", "API"],
     "detailsUrl": "https://github.com/Sumitx5/AniTox",
     "downloadUrl": "https://Sumitx5.github.io/AniTox/"
@@ -43,14 +52,5 @@
     "badges": ["Python", "Discord Bot"],
     "detailsUrl": "https://github.com/Sumitx5/Muzic-Bot",
     "downloadUrl": "https://github.com/Sumitx5/Muzic-Bot/archive/refs/heads/main.zip"
-  },
-  {
-    "title": "Leaf",
-    "version": "v1.2",
-    "icon": "",
-    "description": "A multi-framework Discord bot designed using both Bot Designer for Discord (BDFD / BDJS) and Python.",
-    "badges": ["Python", "BDFD", "Discord Bot"],
-    "detailsUrl": "https://github.com/Sumitx5/Leaf",
-    "downloadUrl": "https://github.com/Sumitx5/Leaf.git"
   }
 ]
